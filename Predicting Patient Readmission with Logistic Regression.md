@@ -52,11 +52,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.feature_selection import RFE
 from sklearn.metrics import confusion_matrix
 
-
-
-
 import random
-
 random.seed(10)
 ```
 
@@ -245,6 +241,7 @@ df.head()
 ## Drop Irrelavant Data
 
 We begin the data preparation by removing irrelevant variables. We removed the following:
+
 - CaseOrder
 - Customer_id
 - Interaction
@@ -467,7 +464,7 @@ confusion_matrix(y_test, reduced_model.predict(X_test))
 
 Here is a more human-readable table:
 
-| | Predicted Positive | Predicted Negative
+| | **Predicted Positive** | **Predicted Negative**
 --- | --- | ---
 **Actual Positive** | 1209 | 22 
 **Actual Negative** | 19 | 750
